@@ -1,7 +1,7 @@
 /**
  * Backend API server addess.
  */
-export const API_URL = "http://localhost:8080/api/";
+export const API_URL = "http://ec2-52-14-122-160.us-east-2.compute.amazonaws.com:8080/api/";
 
 /**
  * Checks whether the request was success or failure; throws an Error in case 

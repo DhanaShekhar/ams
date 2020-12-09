@@ -130,7 +130,7 @@ const AddActivityPage = () => {
   };
 
   const getAllFieldIds = (fieldLocCode) => {
-    fetch(`http://localhost:8080/api/fields?location=${fieldLocCode}`).then(
+    fetch(`http://ec2-52-14-122-160.us-east-2.compute.amazonaws.com:8080/api/fields?location=${fieldLocCode}`).then(
       (fieldIdResp) => {
         fieldIdResp.json().then((fieldIdRespData) => {
           console.log(fieldIdRespData);
@@ -204,7 +204,7 @@ const AddActivityPage = () => {
     console.log(payload);
 
     axios({
-      url: `http://localhost:8080/api/fieldCropCycles/${displayCropId}/processes`,
+      url: `http://ec2-52-14-122-160.us-east-2.compute.amazonaws.com:8080/api/fieldCropCycles/${displayCropId}/processes`,
       method: 'POST',
       data: payload,
 

@@ -87,7 +87,7 @@ function AddCrop() {
             cropGrowthProtocol:{id:cropGrowthProtocol}
         };
         axios({
-            url: `http://localhost:8080/api/crops`,
+            url: `http://ec2-52-14-122-160.us-east-2.compute.amazonaws.com:8080/api/crops`,
             method: 'POST',
             data:payload,
 

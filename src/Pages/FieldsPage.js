@@ -35,7 +35,7 @@ function FieldsPage() {
 
         //TODO
         // axios({
-        //     url: `http://localhost:8080/api/fields`,
+        //     url: `http://ec2-52-14-122-160.us-east-2.compute.amazonaws.com:8080/api/fields`,
         //     method: 'POST',
         //     data: payload,
         //     headers: {
